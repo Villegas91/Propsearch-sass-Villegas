@@ -22,7 +22,7 @@ $fuente: 'Hind', sans-serif;
         color: $text-color;
          }
              h1{
-             padding-left: 20px;
+            padding-left: 20px;
             padding-top: 10px;
                 }
 }
@@ -43,6 +43,9 @@ $fuente: 'Hind', sans-serif;
             list-style: none;
             text-decoration: none;
         } 
+}
+.navbar{
+    display: none;
 }
 .fondo{
     grid-column: 1/3;
@@ -72,7 +75,7 @@ h2{
 }
 .ofertas{
     grid-column: 1/3;
-    margin: 20px;
+
     width: 200%;
     display: flex;
     justify-content: center;
@@ -145,6 +148,8 @@ h2{
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    animation-duration: 0.5s;
+    animation-name: slidein;
 }
 .card-ventas , .card-alquilar{
     border: solid 1px black;
@@ -156,8 +161,7 @@ h2{
     }
 }
 .card-ventas , .card-alquilar{
-    animation-duration: 0.5s;
-    animation-name: slidein;
+    
   }
   
   @keyframes slidein {
@@ -196,7 +200,7 @@ h2{
 .obra1{
     grid-column: 1/3;
     img{
-        width: 600px;
+        width: 50%;
         height: auto;
         margin-left: 25%; 
 
@@ -205,7 +209,7 @@ h2{
 .obra2{
     grid-column: 1/3;
     img{
-        width: 600px;
+        width: 50%;
         height: auto;
         margin-left: 25%; 
     }
@@ -229,4 +233,12 @@ h2{
         display: flex;
         flex-direction: column;
     }
+    .barra{
+        display: none;
+    }
+    .navbar{
+        display:block;
+        background-color: black;
+    }
+    
 }
