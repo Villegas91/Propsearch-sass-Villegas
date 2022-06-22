@@ -206,10 +206,12 @@ h2{
     }
 }
 .contacto{
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     padding-bottom: 20px;
+    padding-right: 10px;
 }
 .emprendimientos{
     margin-top: 50px;
